@@ -1,0 +1,10 @@
+{
+	"extends": "@workspace/ts-config/server.json",
+	"compilerOptions": {
+		"paths": {
+			"@workspace/shared": ["../packages/shared/src/*"]
+		}
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx"],
+	"exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]
+}
