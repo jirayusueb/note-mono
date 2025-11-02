@@ -62,6 +62,7 @@
 				"noShadow": "off"
 			},
 			"suspicious": {
+				"noArrayIndexKey": "off",
 				"noConsole": "off"
 			},
 			"style": {

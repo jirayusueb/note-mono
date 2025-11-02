@@ -6,9 +6,9 @@
 
 /* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind CSS theme directive */
 @theme {
-	--font-sans: Outfit, ui-sans-serif, sans-serif, system-ui;
+	--font-sans: Geist Mono, ui-monospace, monospace;
 	--font-serif: IBM Plex Serif, ui-serif, serif;
-	--font-mono: monospace;
+	--font-mono: Geist Mono, ui-monospace, monospace;
 }
 
 html,
@@ -54,10 +54,10 @@ body {
 	--sidebar-accent-foreground: #0b0b0b;
 	--sidebar-border: #d1d1d1;
 	--sidebar-ring: #f64d00;
-	--font-sans: Outfit, ui-sans-serif, sans-serif, system-ui;
+	--font-sans: Geist Mono, ui-monospace, monospace;
 	--font-serif: IBM Plex Serif, ui-serif, serif;
-	--font-mono: monospace;
-	--radius: 0.25rem;
+	--font-mono: Geist Mono, ui-monospace, monospace;
+	--radius: 0.5rem;
 	--shadow-x: 0px;
 	--shadow-y: 4px;
 	--shadow-blur: 8px;
@@ -109,10 +109,10 @@ body {
 	--sidebar-accent-foreground: #e4e4e4;
 	--sidebar-border: #2e2e2e;
 	--sidebar-ring: #f64d00;
-	--font-sans: Outfit, ui-sans-serif, sans-serif, system-ui;
+	--font-sans: Geist Mono, ui-monospace, monospace;
 	--font-serif: IBM Plex Serif, ui-serif, serif;
-	--font-mono: monospace;
-	--radius: 0.25rem;
+	--font-mono: Geist Mono, ui-monospace, monospace;
+	--radius: 0.5rem;
 	--shadow-x: 0px;
 	--shadow-y: 4px;
 	--shadow-blur: 8px;

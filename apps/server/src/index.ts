@@ -1,5 +1,6 @@
 import { Elysia } from "elysia";
 
+import { boardController } from "./board/infrastructure";
 import { env } from "./env";
 import { healthRouter } from "./routers/health";
 import { StatusCodes } from "./shared/infrastructure/const";
@@ -27,6 +28,7 @@ const app = new Elysia()
 		return { error: "Method not allowed" };
 	})
 	.use(healthRouter)
+	.use(boardController)
 	.use(todoController)
 	.listen(env.PORT);
 

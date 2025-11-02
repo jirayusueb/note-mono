@@ -1,22 +1,20 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Serif, Outfit } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 
 import { Providers } from "@/components/providers";
 import { Toaster } from "@/components/ui/sonner";
 import "../index.css";
 
-const outfit = Outfit({
+const fontSans = Geist_Mono({
 	variable: "--font-sans",
 	subsets: ["latin"],
 	display: "swap",
-	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const ibmPlexSerif = IBM_Plex_Serif({
-	variable: "--font-serif",
+const fontMono = Geist_Mono({
+	variable: "--font-mono",
 	subsets: ["latin"],
 	display: "swap",
-	weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -30,8 +28,8 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
 	const fontClasses = [
-		outfit.variable,
-		ibmPlexSerif.variable,
+		fontSans.variable,
+		fontMono.variable,
 		"antialiased",
 	].join(" ");
 

@@ -1,5 +1,6 @@
 "use client";
 
+import NiceModal from "@ebay/nice-modal-react";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "sonner";
 
@@ -15,8 +16,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
 				disableTransitionOnChange
 				enableSystem
 			>
-				{children}
-				<Toaster richColors />
+				<NiceModal.Provider>
+					{children}
+					<Toaster richColors />
+				</NiceModal.Provider>
 			</ThemeProvider>
 		</QueryClientProvider>
 	);
